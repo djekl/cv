@@ -1,0 +1,137 @@
+html {
+    background: #eee;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-smoothing: antialiased;
+    text-shadow: 0 0 1px rgba(255, 255, 255, .1);
+}
+
+body {
+    background: #fff;
+    border: solid 1px #aaa;
+    margin: 50px auto;
+    width: 18.46cm;
+    padding: 1.5cm;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .15), 0px 3px 20px 0px rgba(0, 0, 0, .2);
+    position: relative;
+}
+
+#top_block {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 20pt;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+#top_block p {
+    font-family: Georgia, Serif;
+    color: #555;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article header {
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom: solid 1px #888;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+article p:last-of-type {
+    margin-bottom: 0px;
+}
+
+article dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+article dd {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+article dd:last-of-type {
+    margin-bottom: 0px;
+}
+
+#back_home {
+    color: #888;
+    text-decoration: none;
+    border: solid 1px #888;
+    border-radius: 10px;
+    padding: 3px 6px;
+    font-size: 80%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+#back_home:hover {
+    color: #5774AD;
+    border-color: #5774AD;
+}
+
+#availability {
+    position: absolute;
+    text-align: center;
+    display: block;
+    transform: rotate(45deg);
+    background-color: rgba(174, 174, 174, 0.8);
+    height: 25px;
+    line-height: 25px;
+    margin: 0px;
+    padding: 0px;
+    width: 145px;
+    top: 47px;
+    right: -13px;
+    /*border: 1px solid rgba(174, 174, 174, 0.8);*/
+}
+
+#availability:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    border-color: rgba(174, 174, 174, 0.8) transparent transparent;
+    border-width: 25px 0 0 25px;
+    border-style: solid;
+    display: block;
+    transform: rotate(90deg);
+}
+
+#availability:after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    border-color: rgba(174, 174, 174, 0.8) transparent transparent;
+    border-width: 25px 0 0 25px;
+    border-style: solid;
+    display: block;
+    transform: rotate(180deg);
+}
+
+*[unselectable="on"] {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
